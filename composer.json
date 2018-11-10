@@ -1,0 +1,32 @@
+{
+    "name":        "rheinstruktur/oxid6-module-baseprice",
+    "description": "Extend BasePrice Functionality for OXID6",
+    "type":        "oxideshop-module",
+    "keywords":    [
+        "oxid",
+        "modules",
+        "eShop",
+        "Base Price"
+    ],
+    "homepage":    "https://rheinstruktur.de",
+    "license": "GPL-3.0-only",
+    "authors":     [
+        {
+            "name":  "rheinstruktur GmbH",
+            "email": "speckhardt@rheinstruktur.de"
+        }
+    ],
+    "extra":       {
+        "oxideshop": {
+            "target-directory": "rs/BasePrice"
+        }
+    },
+    "require":     {
+        "php": ">=5.6"
+    },
+    "autoload":    {
+        "psr-4": {
+            "Rheinstruktur\\BasePrice\\": "../../../source/modules/rs/BasePrice"
+        }
+    }
+}
